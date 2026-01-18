@@ -35,7 +35,35 @@
       </article>
     </main>
 
-    <footer class="site-footer">Check back for new drops.</footer>
+    <footer class="site-footer" id="page-slogan">Check back for new drops.</footer>
   </div>
+
+  <script>
+    const slogans = [
+      "Check back for new drops.",
+      "Small updates, clear skies.",
+      "Signals from the lookout.",
+      "News that fits in a pocket.",
+      "Fresh notes, same horizon.",
+      "Updates drift in quietly.",
+      "A little weather report for the soul.",
+      "New arrivals on the wind.",
+      "Briefings from above.",
+      "The logbook stays open.",
+      "Nothing loud, just true.",
+      "Keep a light on for updates.",
+      "New details, same altitude.",
+      "Short headlines, long echoes.",
+      "The lookout reports in.",
+      "News you can breathe with.",
+      "Tiny notices, bright edges.",
+      "Expect small shifts.",
+      "A few more notes, every so often.",
+      "Updates at a gentle pace."
+    ];
+
+    const footer = document.getElementById("page-slogan");
+    footer.textContent = slogans[Math.floor(Math.random() * slogans.length)];
+  </script>
 </body>
 </html>

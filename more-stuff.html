@@ -42,7 +42,35 @@
       </section>
     </main>
 
-    <footer class="site-footer">Thanks for visiting.</footer>
+    <footer class="site-footer" id="page-slogan">Thanks for visiting.</footer>
   </div>
+
+  <script>
+    const slogans = [
+      "Thanks for visiting.",
+      "Extra rooms, open doors.",
+      "More paths appear over time.",
+      "The archive is waking up.",
+      "Leave a note for later.",
+      "Stay curious, stay light.",
+      "There is always more sky.",
+      "Small extras, big horizon.",
+      "Contact the lookout anytime.",
+      "The back rooms glow softly.",
+      "More to come, slowly.",
+      "The archive keeps its breath.",
+      "Gentle extras, steady ground.",
+      "A quiet corner for future notes.",
+      "More signals, fewer words.",
+      "The next door is ajar.",
+      "Future pages are forming.",
+      "Come back with fresh eyes.",
+      "The shelf is waiting.",
+      "Thanks for taking the long way."
+    ];
+
+    const footer = document.getElementById("page-slogan");
+    footer.textContent = slogans[Math.floor(Math.random() * slogans.length)];
+  </script>
 </body>
 </html>

@@ -45,7 +45,35 @@
       </section>
     </main>
 
-    <footer class="site-footer">More signals on the way.</footer>
+    <footer class="site-footer" id="page-slogan">More signals on the way.</footer>
   </div>
+
+  <script>
+    const slogans = [
+      "More signals on the way.",
+      "Artifacts drift in softly.",
+      "Listen for the small hum.",
+      "Media from the thin air.",
+      "Fragments worth holding.",
+      "Signals find their landing.",
+      "Quiet recordings, bright traces.",
+      "Small artifacts, long shadows.",
+      "Tune in, then breathe out.",
+      "Field notes with a pulse.",
+      "The archive hums quietly.",
+      "Let the signal linger.",
+      "Images without the noise.",
+      "Sound carries far up here.",
+      "Signals, not noise.",
+      "Hold onto the fragments.",
+      "Soft transmissions, steady light.",
+      "Echoes from the lookout.",
+      "Receive, reflect, release.",
+      "A place for lingering media."
+    ];
+
+    const footer = document.getElementById("page-slogan");
+    footer.textContent = slogans[Math.floor(Math.random() * slogans.length)];
+  </script>
 </body>
 </html>

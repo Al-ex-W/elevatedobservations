@@ -54,7 +54,7 @@
       </section>
     </main>
 
-    <footer class="site-footer">Got more? Keep them coming.</footer>
+    <footer class="site-footer" id="page-slogan">Got more? Keep them coming.</footer>
   </div>
 
   <script>
@@ -76,6 +76,32 @@
       input.value = "";
       input.focus();
     });
+
+    const slogans = [
+      "Got more? Keep them coming.",
+      "Ask the quiet thing.",
+      "Good questions rise.",
+      "Curiosity likes fresh air.",
+      "Leave a mark, not an answer.",
+      "Every question clears the view.",
+      "Ask small, see far.",
+      "Questions are weather, watch them move.",
+      "Open a window in the sky.",
+      "The best questions linger.",
+      "Let wonder do the work.",
+      "Ask once, listen twice.",
+      "A question is a compass.",
+      "Lift the lid on the ordinary.",
+      "Follow the thread upward.",
+      "Ask it anyway.",
+      "Questions sharpen the horizon.",
+      "Start with what you see.",
+      "A good question is a landing.",
+      "We save room for wonder."
+    ];
+
+    const footer = document.getElementById("page-slogan");
+    footer.textContent = slogans[Math.floor(Math.random() * slogans.length)];
   </script>
 </body>
 </html>

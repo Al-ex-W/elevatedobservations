@@ -39,7 +39,35 @@
       </ul>
     </main>
 
-    <footer class="site-footer">Return to the air anytime.</footer>
+    <footer class="site-footer" id="page-slogan">Return to the air anytime.</footer>
   </div>
+
+  <script>
+    const slogans = [
+      "Return to the air anytime.",
+      "Look longer than a glance.",
+      "Altitude turns noise into pattern.",
+      "Notice the pauses between notes.",
+      "Hold still, the sky answers.",
+      "Every observation is a landing.",
+      "Edges show first from above.",
+      "Keep a small notebook, look wide.",
+      "The light changes, then tells you why.",
+      "Quiet is a texture, not a void.",
+      "Follow the drift, not the rush.",
+      "The horizon is a habit.",
+      "One line at a time, clear the view.",
+      "Patterns arrive without warning.",
+      "Listen to the air before the story.",
+      "Details live in the slow seconds.",
+      "Altitude gives time its shape.",
+      "Trace the shimmer, keep going.",
+      "Hold the moment, then let it pass.",
+      "See what the ground forgets."
+    ];
+
+    const footer = document.getElementById("page-slogan");
+    footer.textContent = slogans[Math.floor(Math.random() * slogans.length)];
+  </script>
 </body>
 </html>
