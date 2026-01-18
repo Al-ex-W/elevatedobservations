@@ -1,0 +1,247 @@
+/* Pet Sounds Theme - The Beach Boys Inspired */
+
+:root {
+    --pet-sounds-green: #245e31;
+    --pet-sounds-yellow: #f9d848;
+    --pet-sounds-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cooper Black', 'Arial Black', 'Helvetica Bold', serif;
+    font-weight: 900;
+    background-color: var(--pet-sounds-green);
+    color: var(--pet-sounds-yellow);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: var(--pet-sounds-yellow);
+    padding: 15px 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: var(--pet-sounds-green);
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 900;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+/* Pet Sounds Header */
+.pet-sounds-header {
+    text-align: center;
+    font-size: 4em;
+    color: var(--pet-sounds-yellow);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+/* Buttons and Inputs */
+button,
+input[type="submit"],
+.btn {
+    background-color: var(--pet-sounds-yellow);
+    color: var(--pet-sounds-green);
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    font-family: 'Cooper Black', 'Arial Black', 'Helvetica Bold', serif;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover,
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+input[type="text"],
+textarea {
+    background-color: var(--pet-sounds-white);
+    color: var(--pet-sounds-green);
+    border: 3px solid var(--pet-sounds-yellow);
+    padding: 10px;
+    font-size: 1.1em;
+    font-family: 'Cooper Black', 'Arial Black', 'Helvetica Bold', serif;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Content Sections */
+.bio-section,
+.form-section,
+.questions-section,
+.media-grid {
+    background-color: rgba(36, 94, 49, 0.8);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 4px solid var(--pet-sounds-yellow);
+}
+
+.bio-section h2,
+.form-section h2,
+.questions-section h2 {
+    color: var(--pet-sounds-yellow);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.bio-section p {
+    color: var(--pet-sounds-white);
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+/* Questions Page Styling */
+.question-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.question {
+    font-size: 1.5em;
+    color: var(--pet-sounds-yellow);
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.answer {
+    font-size: 1.2em;
+    color: var(--pet-sounds-white);
+    line-height: 1.5;
+    padding-left: 20px;
+}
+
+/* Media Grid */
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 30px;
+}
+
+.media-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.media-item h3 {
+    color: var(--pet-sounds-yellow);
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.media-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 3px solid var(--pet-sounds-yellow);
+}
+
+.media-item iframe {
+    width: 100%;
+    border-radius: 8px;
+    border: 3px solid var(--pet-sounds-yellow);
+}
+
+.media-item audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.media-item a {
+    color: var(--pet-sounds-yellow);
+    text-decoration: none;
+    font-size: 1.2em;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.media-item a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: var(--pet-sounds-white);
+    font-size: 1em;
+}
+
+footer a {
+    color: var(--pet-sounds-yellow);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styling */
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pet-sounds-header {
+        font-size: 2.5em;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+    }
+
+    .media-grid {
+        grid-template-columns: 1fr;
+    }
+}
