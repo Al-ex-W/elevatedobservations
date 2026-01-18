@@ -1,102 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>observations</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #000000;
-            min-height: 100vh;
-            padding: 30px 40px;
-            color: #ffffff;
-        }
-        
-        h1 {
-            font-size: 3em;
-            margin-bottom: 40px;
-            font-weight: bold;
-        }
-        
-        .observation {
-            font-size: 1.5em;
-            color: #ffffff;
-            margin-bottom: 30px;
-            line-height: 1.6;
-        }
-        
-        .observation::before {
-            content: "• ";
-            color: #ff0080;
-        }
-        
-        .back-link {
-            margin-top: 60px;
-            font-size: 2em;
-            font-weight: bold;
-        }
-        
-        .back-link a {
-            text-decoration: none;
-        }
-        
-        .back-link a:hover {
-            text-decoration: underline;
-        }
-        
-        .c1 { color: #ff0080; }
-        .c2 { color: #00ff80; }
-        .c3 { color: #ff8000; }
-        .c4 { color: #0080ff; }
-        .c5 { color: #ffff00; }
-        .c6 { color: #ff0000; }
-        .c7 { color: #00ffff; }
-        .c8 { color: #ff00ff; }
-        .c9 { color: #80ff00; }
-        .c10 { color: #8000ff; }
-        .c11 { color: #ffff80; }
-        .c12 { color: #80ffff; }
-        
-        @media (max-width: 768px) {
-            body {
-                padding: 20px 20px;
-            }
-            
-            h1 {
-                font-size: 2em;
-                margin-bottom: 30px;
-            }
-            
-            .observation {
-                font-size: 1.2em;
-            }
-            
-            .back-link {
-                font-size: 1.5em;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Observations | Elevated Observations</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1><span class="c1">o</span><span class="c2">b</span><span class="c3">s</span><span class="c4">e</span><span class="c5">r</span><span class="c6">v</span><span class="c7">a</span><span class="c8">t</span><span class="c9">i</span><span class="c10">o</span><span class="c11">n</span><span class="c12">s</span></h1>
-    
-    <div class="observation">the sky looks different from up here</div>
-    <div class="observation">clouds have personalities if you look long enough</div>
-    <div class="observation">time moves differently at altitude</div>
-    <div class="observation">silence is never really silent</div>
-    <div class="observation">patterns emerge when you least expect them</div>
-    
-    <div class="back-link">
-        <a href="index.html">
-            <span class="c4">b</span><span class="c5">a</span><span class="c6">c</span><span class="c7">k</span>
-        </a>
-    </div>
+  <div class="page">
+    <header class="site-header">
+      <div class="brand">
+        <p class="eyebrow">Elevated Observations</p>
+        <div class="page-title">Observations</div>
+        <p class="lede">Notes collected from higher ground.</p>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="observations.html" aria-current="page">Observations</a>
+        <a href="questions.html">Questions</a>
+        <a href="news.html">News</a>
+        <a href="media.html">Media</a>
+        <a href="more-stuff.html">More</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Current altitude</h2>
+        <p class="lede">Small, sharp notes for when the ground feels too loud.</p>
+      </section>
+
+      <ul class="list">
+        <li class="observation">The sky looks different from up here.</li>
+        <li class="observation">Clouds have personalities if you look long enough.</li>
+        <li class="observation">Time moves differently at altitude.</li>
+        <li class="observation">Silence is never really silent.</li>
+        <li class="observation">Patterns emerge when you least expect them.</li>
+      </ul>
+    </main>
+
+    <footer class="site-footer">Return to the air anytime.</footer>
+  </div>
 </body>
 </html>

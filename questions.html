@@ -1,49 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questions | Al-ex-W</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questions | Elevated Observations</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Bio</a>
-        <a href="media.html">Media Stream</a>
-        <a href="questions.html">Questions</a>
-    </nav>
+  <div class="page">
+    <header class="site-header">
+      <div class="brand">
+        <p class="eyebrow">Elevated Observations</p>
+        <div class="page-title">Questions</div>
+        <p class="lede">Ask anything. The best questions rise.</p>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="observations.html">Observations</a>
+        <a href="questions.html" aria-current="page">Questions</a>
+        <a href="news.html">News</a>
+        <a href="media.html">Media</a>
+        <a href="more-stuff.html">More</a>
+      </nav>
+    </header>
 
-    <div class="container">
-        <h1>Questions</h1>
-        
-        <div class="question-form">
-            <h2>Ask me anything</h2>
-            <form action="#" method="get">
-                <textarea placeholder="Type your question here..."></textarea>
-                <button type="button">Ask</button>
-            </form>
-        </div>
+    <main>
+      <section class="card form-block">
+        <h2>Ask me anything</h2>
+        <form id="question-form" class="form-block">
+          <label for="question-input">Your question</label>
+          <textarea id="question-input" placeholder="Type your question here..." required></textarea>
+          <button type="submit">Send question</button>
+          <p class="form-note">Questions are stored in this browser session only.</p>
+        </form>
+      </section>
 
-        <div class="qa-list">
-            <div class="qa-item">
-                <div class="question">what is this?</div>
-                <div class="answer">elevated observations about the world</div>
-            </div>
-            
-            <div class="qa-item">
-                <div class="question">who are you?</div>
-                <div class="answer">just someone making observations</div>
-            </div>
-            
-            <div class="qa-item">
-                <div class="question">why?</div>
-                <div class="answer">why not</div>
-            </div>
-        </div>
+      <section class="card">
+        <h2>Recent Q and A</h2>
+        <ul class="list" id="question-pending">
+          <li class="qa-item">
+            <p class="question">What is this?</p>
+            <p class="answer">Elevated observations about the world.</p>
+          </li>
+          <li class="qa-item">
+            <p class="question">Who are you?</p>
+            <p class="answer">Someone still looking up.</p>
+          </li>
+          <li class="qa-item">
+            <p class="question">Why?</p>
+            <p class="answer">Why not.</p>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-        <div class="login-link">
-            <a href="#">Log in to answer</a>
-        </div>
-    </div>
+    <footer class="site-footer">Got more? Keep them coming.</footer>
+  </div>
+
+  <script>
+    const form = document.getElementById("question-form");
+    const input = document.getElementById("question-input");
+    const list = document.getElementById("question-pending");
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const text = input.value.trim();
+      if (!text) {
+        return;
+      }
+
+      const item = document.createElement("li");
+      item.className = "qa-item";
+      item.innerHTML = `<p class="question">${text}</p><p class="answer muted">Pending response.</p>`;
+      list.prepend(item);
+      input.value = "";
+      input.focus();
+    });
+  </script>
 </body>
 </html>

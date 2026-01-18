@@ -1,115 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>elevated observations</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #000000;
-            min-height: 100vh;
-            padding: 30px 40px;
-            color: #ffffff;
-        }
-        
-        .link-item {
-            font-size: 3em;
-            line-height: 1.3;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        
-        .link-item a {
-            text-decoration: none;
-        }
-        
-        .link-item a:hover {
-            text-decoration: underline;
-        }
-        
-        /* billwurtz.com inspired color palette */
-        .c1 { color: #ff0080; } /* pink */
-        .c2 { color: #00ff80; } /* green */
-        .c3 { color: #ff8000; } /* orange */
-        .c4 { color: #0080ff; } /* blue */
-        .c5 { color: #ffff00; } /* yellow */
-        .c6 { color: #ff0000; } /* red */
-        .c7 { color: #00ffff; } /* cyan */
-        .c8 { color: #ff00ff; } /* magenta */
-        .c9 { color: #80ff00; } /* lime */
-        .c10 { color: #8000ff; } /* purple */
-        .c11 { color: #ffff80; } /* light yellow */
-        .c12 { color: #80ffff; } /* light cyan */
-        
-        .bottom-links {
-            margin-top: 60px;
-        }
-        
-        .bottom-link {
-            font-size: 2em;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        
-        .bottom-link a {
-            text-decoration: none;
-        }
-        
-        .bottom-link a:hover {
-            text-decoration: underline;
-        }
-        
-        @media (max-width: 768px) {
-            body {
-                padding: 20px 20px;
-            }
-            
-            .link-item {
-                font-size: 2em;
-            }
-            
-            .bottom-links {
-                margin-top: 40px;
-            }
-            
-            .bottom-link {
-                font-size: 1.5em;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elevated Observations</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="link-item">
-        <a href="questions.html">
-            <span class="c1">q</span><span class="c2">u</span><span class="c3">e</span><span class="c4">s</span><span class="c5">t</span><span class="c6">i</span><span class="c7">o</span><span class="c8">n</span><span class="c9">s</span>
-        </a>
-    </div>
-    
-    <div class="link-item">
-        <a href="news.html">
-            <span class="c4">n</span><span class="c5">e</span><span class="c6">w</span><span class="c7">s</span>
-        </a>
-    </div>
-    
-    <div class="link-item">
-        <a href="observations.html">
-            <span class="c10">o</span><span class="c11">b</span><span class="c12">s</span><span class="c1">e</span><span class="c2">r</span><span class="c3">v</span><span class="c4">a</span><span class="c5">t</span><span class="c6">i</span><span class="c7">o</span><span class="c8">n</span><span class="c9">s</span>
-        </a>
-    </div>
-    
-    <div class="bottom-links">
-        <div class="bottom-link">
-            <a href="more-stuff.html">
-                <span class="c3">m</span><span class="c4">o</span><span class="c5">r</span><span class="c6">e</span> <span class="c7">s</span><span class="c8">t</span><span class="c9">u</span><span class="c10">f</span><span class="c11">f</span>
-            </a>
+  <div class="page">
+    <header class="site-header">
+      <div class="brand">
+        <p class="eyebrow">Elevated Observations</p>
+        <h1>Altitude notes for grounded days.</h1>
+        <p class="lede">A small collection of dispatches, questions, and signals gathered above the noise.</p>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="observations.html">Observations</a>
+        <a href="questions.html">Questions</a>
+        <a href="news.html">News</a>
+        <a href="media.html">Media</a>
+        <a href="more-stuff.html">More</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card hero">
+        <h2>Start here</h2>
+        <p class="lede">Take a quick scan, then linger wherever the air feels clearest.</p>
+        <div class="hero-actions">
+          <a class="button" href="observations.html">Read the latest observations</a>
+          <a class="ghost" href="questions.html">Leave a question</a>
         </div>
-    </div>
+      </section>
+
+      <section class="grid">
+        <a class="tile" href="observations.html">
+          Observations
+          <span>Short altitude notes and quiet patterns.</span>
+        </a>
+        <a class="tile" href="questions.html">
+          Questions
+          <span>Ask anything. We will pin the best ones.</span>
+        </a>
+        <a class="tile" href="news.html">
+          News
+          <span>Small updates and new additions.</span>
+        </a>
+        <a class="tile" href="media.html">
+          Media Stream
+          <span>Signals, artifacts, and field recordings.</span>
+        </a>
+      </section>
+
+      <section class="split">
+        <article class="card">
+          <h3>Latest observation</h3>
+          <p class="lede">Silence is never really silent, especially when you sit still long enough.</p>
+          <a class="text-link" href="observations.html">Browse the full list</a>
+        </article>
+        <article class="card">
+          <h3>News pulse</h3>
+          <p class="lede">Website launched. The next batch of observations is landing soon.</p>
+          <a class="text-link" href="news.html">See all updates</a>
+        </article>
+      </section>
+
+      <section class="card">
+        <h3>What is this place?</h3>
+        <p class="lede">A quiet corner for noticing: weather, motion, light, and the moments that try to pass unnoticed.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">Built for slow reading and quick wonder.</footer>
+  </div>
 </body>
 </html>
